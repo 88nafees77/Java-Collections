@@ -1,0 +1,22 @@
+import java.util.*;
+class vector{
+	public void v(){
+	Vector v=new Vector();
+	for(int i=0;i<3;i++)
+		v.add(i);
+	Enumeration itr=v.elements();
+	while(itr.hasMoreElements()){
+		Integer i=(Integer)itr.nextElement();
+		System.out.println(i);
+//		itr.set(6);
+	}
+//	itr.add(6);
+	System.out.println(v);
+	}
+}
+class m{
+	public static void main(String args[]){
+		vector v=new vector();
+		v.v();
+	}
+}
